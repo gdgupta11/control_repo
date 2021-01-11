@@ -8,10 +8,10 @@
 
 node default{
 }
-node 'web'{
+node 'master.puppet.vm'{
   include role::master_server
 }
 
-node 'db' {
+node 'db.puppet.vm' {
   include role::db_server
 }
