@@ -1,4 +1,7 @@
 mod 'puppet/nginx', '1.0.0'
+mod 'puppetlabs-mysql', '10.9.1'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/concat'
 mod 'puppetlabs/translate'
+mod 'puppetlabs/resource_api'
+mod 'puppetlabs/puppetserver_gem'
