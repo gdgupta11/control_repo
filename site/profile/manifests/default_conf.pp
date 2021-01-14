@@ -3,6 +3,7 @@ class profile::default_conf {
 
   package { 'python-setuptools':
     ensure => installed,
+    provider  => apt,
   }
 
   package { 'python-pip':
