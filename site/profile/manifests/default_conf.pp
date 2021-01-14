@@ -18,7 +18,7 @@ class profile::default_conf {
 
   package { 'virtualenv':
     ensure    => installed,
-    provider  => pip3
+    provider  => pip3,
   }
 
 }
