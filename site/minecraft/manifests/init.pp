@@ -17,8 +17,9 @@ class minecraft (
     before => Service['minecraft'],
   }
 
-  package {'java':
+  package {'default-jre':
     ensure => present,
+    provider  => apt,
   }
 
   # instead of hardcoded file name, we are using parameter which we have defined on the top
