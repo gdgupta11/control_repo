@@ -40,6 +40,6 @@ class minecraft (
     ensure => running,
     enable => true,
     # here we are making sure that before running the service following filies or package are present
-    require => [Package['java'],File["${install_dir}/eula.txt"],File['/etc/systemd/system/minecraft.service']],
+    require => [File["${install_dir}/eula.txt"],File['/etc/systemd/system/minecraft.service']],
   }
 }
