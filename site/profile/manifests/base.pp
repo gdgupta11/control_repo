@@ -3,5 +3,5 @@ class profile::base {
     ensure => present,
   }
 
-
+  
 }

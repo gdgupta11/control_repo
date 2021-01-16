@@ -14,3 +14,7 @@ node 'master.puppet.vm'{
 node 'db.puppet.vm' {
   include role::db_server
 }
+
+node 'minecraft.puppet.vm' {
+  include role::basic_agent
+}
